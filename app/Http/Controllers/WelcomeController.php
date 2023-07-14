@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Inertia\Inertia;
+
 
 class WelcomeController extends Controller
 {
 
     public function index() {
 
-        return view('welcome');
+        $testString = 'Hello';
+
+        return Inertia::render('Welcome', [
+            'testString' => $testString
+        ]);
     }
 }
