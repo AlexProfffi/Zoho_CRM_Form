@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 use Inertia\Inertia;
 
@@ -8,12 +9,11 @@ use Inertia\Inertia;
 class WelcomeController extends Controller
 {
 
-    public function index() {
+    public function index(Request $request) {
 
-        $testString = 'Hello';
 
         return Inertia::render('Welcome', [
-            'testString' => $testString
+            'imagePath' => 'images/hh/iphone_x.jpg'
         ]);
     }
 }
