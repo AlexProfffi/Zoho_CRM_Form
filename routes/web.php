@@ -1,28 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\CategoryController;
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-// -------- / ----------
-
-Route::get('/', [WelcomeController::class, 'index'])
-    ->name('welcome');
+use App\Http\Controllers\ZohoCRMFormController;
 
 
 
-// -------- /categories ----------
+// -------- Zoho CRM Form ----------
 
-Route::get('/categories', [CategoryController::class, 'index'])
-    ->name('categories');
+Route::get('/', function () {
+
+    return redirect()->route('zoho_crm_form');
+});
+
+
+Route::get('/zoho_crm_form', [ZohoCRMFormController::class, 'create'])
+    ->name('zoho_crm_form');
+
+

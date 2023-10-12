@@ -1,12 +1,8 @@
 <template>
     <div>
         <Head>
-            <title>Welcome</title>
+            <title>Zoho CRM Form</title>
         </Head>
-
-        <img :src="getImageUrl(imagePath)" alt="">
-
-        <Link :href="route('categories')">categories</Link>
 
         <form @submit.prevent="submitToken">
             <div class="form-group">
@@ -35,8 +31,7 @@
 // ======== Import ========
 
 import MainLayout from "@/Layouts/MainLayout.vue";
-import { Head, Link } from '@inertiajs/vue3'
-import { getImageUrl } from "@/helpers";
+import { Head } from '@inertiajs/vue3'
 import { useForm } from '@inertiajs/vue3';
 
 
@@ -51,6 +46,8 @@ const props = defineProps({
     imagePath: String
 })
 
+
+// ======== Zoho CRM Form ========
 
 // ------ Data -------
 
