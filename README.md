@@ -1,6 +1,6 @@
 ## Installation
 
-1. Clone the repo locally: `git clone https://github.com/AlexProfffi/my.store.technology`
+1. Clone the repo locally: `git clone https://github.com/AlexProfffi/Zoho_CRM_Form`
 2. Navigate in your Laravel project folder: `cd /your-path/Zoho_CRM_Form`
 3. Run docker containers: `docker-compose up -d`
 4. Install project dependencies: `docker exec container_app composer install`

@@ -10,7 +10,11 @@
     },
     "dependencies": {
         "@inertiajs/vue3": "^1.0.9",
+        "@vee-validate/zod": "^4.11.8",
         "@vitejs/plugin-vue": "^4.2.3",
-        "vue": "^3.3.4"
+        "primevue": "^3.36.0",
+        "vee-validate": "^4.11.8",
+        "vue": "^3.3.4",
+        "zod": "^3.22.4"
     }
 }

@@ -16,4 +16,5 @@ Route::get('/', function () {
 Route::get('/zoho_crm_form', [ZohoCRMFormController::class, 'create'])
     ->name('zoho_crm_form');
 
-
+Route::post('/zoho_crm_form', [ZohoCRMFormController::class, 'store'])
+    ->name('zoho_crm_form.store');
